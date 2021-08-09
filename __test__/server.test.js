@@ -26,7 +26,7 @@ it('get data',async()=>{
     //add test cases
     const response = await requset.get('/data');//async
     expect(response.status).toEqual(200);
-    expect(typeof response.body).toEqual('obj');
+    expect(typeof response.body).toEqual('object');
 });
 
 it('/route working',async()=>{
@@ -34,7 +34,7 @@ it('/route working',async()=>{
     const response = await requset.get('/');
     expect(response.status).toEqual(200);
     console.log(response.text);
-    expect( response.text).toEqual('server running');
+    expect( response.text).toEqual('Welcome To Home Page');
 });
 
 });
